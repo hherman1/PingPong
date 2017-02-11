@@ -269,3 +269,7 @@ deps/SOIL/
 build/
 CMakeFiles/
 CMakeCache
+
+#vs
+*.vcxproj*
+*.sln
