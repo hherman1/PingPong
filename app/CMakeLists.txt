@@ -10,9 +10,42 @@ if (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
     set (CMAKE_INSTALL_PREFIX "${${PROJECT_NAME}_SOURCE_DIR}/build/install" CACHE PATH "default install path" FORCE )
 endif()
 
+set (SOURCEFILES  src/BaseApp.cpp
+				  src/Box.cpp
+				  src/Cone.cpp
+				  src/Cylinder.cpp
+				  src/Event.cpp
+				  include/glad/src/glad.c
+				  src/ExampleApp.cpp
+				  src/GLSLProgram.cpp
+				  src/Line.cpp
+				  src/main.cpp
+				  src/Mesh.cpp
+				  src/Model.cpp
+				  src/ModelRegistry.cpp
+				  src/Sphere.cpp
+				  src/Texture.cpp
+				  src/Table.cpp)
 
-file (GLOB SOURCEFILES "src/*.cpp" "include/glad/src/glad.c")
-file (GLOB HEADERFILES "src/*.h")
+set (HEADERFILES  src/BaseApp.h
+				  src/Box.h
+				  src/Cone.h
+				  src/Cylinder.h
+				  src/Event.h
+				  src/ExampleApp.h
+				  src/GLSLProgram.h
+				  src/Line.h
+				  src/Mesh.h
+				  src/Model.h
+				  src/ModelRegistry.h
+				  src/Sphere.h
+				  src/Texture.h
+				  src/Table.h)
+
+
+
+#file (GLOB SOURCEFILES "src/*.cpp" "include/glad/src/glad.c")
+#file (GLOB HEADERFILES "src/*.h")
 
 source_group("Header Files" FILES ${HEADERFILES})
 ############################################################

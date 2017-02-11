@@ -13,7 +13,6 @@ namespace basicgraphics {
 	glm::vec2 BaseApp::cursorPos(0);
 
 	BaseApp::BaseApp(int argc, char** argv, std::string windowName, int windowWidth, int windowHeight) {
-		std::cout << "meme";
 		glfwSetErrorCallback(BaseApp::error_callback);
 
 		if (!glfwInit()) {
