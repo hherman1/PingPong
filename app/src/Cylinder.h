@@ -10,8 +10,8 @@
 #define Cylinder_hpp
 
 #include <stdio.h>
-#include <Model.h>
-#include <GLSLProgram.h>
+#include "Model.h"
+#include "GLSLProgram.h"
 #define GLM_FORCE_RADIANS
 #include <glm/glm/glm.hpp>
 #include <glm/glm/gtc/matrix_access.hpp>

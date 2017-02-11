@@ -11,8 +11,8 @@ if (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
 endif()
 
 
-file (GLOB SOURCEFILES "*.cpp" "glad/src/glad.c")
-file (GLOB HEADERFILES "*.h")
+file (GLOB SOURCEFILES "src/*.cpp" "include/glad/src/glad.c")
+file (GLOB HEADERFILES "src/*.h")
 
 source_group("Header Files" FILES ${HEADERFILES})
 ############################################################
@@ -57,7 +57,7 @@ find_package(OpenGL REQUIRED)
 set(OPENGL_LIBRARIES ${OPENGL_gl_LIBRARY})
 set(OPENGL_INCLUDE_DIRS ${OPENGL_INCLUDE_DIR})
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR} ${GLFW_INCLUDE_DIR} ${ASSIMP_INCLUDE_DIR} ${SOIL_INCLUDE_DIR} ${OPENGL_INCLUDE_DIR} glad/include)
+include_directories( ${GLFW_INCLUDE_DIR} ${ASSIMP_INCLUDE_DIR} ${SOIL_INCLUDE_DIR} ${OPENGL_INCLUDE_DIR} include/ include/glad/include)
 
 add_executable(app ${SOURCEFILES} ${HEADERFILES})
 target_link_libraries(app ${GLFW_LIBRARY} ${ZLIB_LIBRARIES} ${ASSIMP_LIBRARY} ${SOIL_LIBRARY} ${OPENGL_LIBRARIES} ${LIBS_ALL})
