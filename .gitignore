@@ -268,3 +268,4 @@ deps/*
 deps/SOIL/
 build/
 CMakeFiles/
+CMakeCache
