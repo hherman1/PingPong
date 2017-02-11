@@ -262,13 +262,15 @@ __pycache__/
 
 #tempfile
 deps/*
+deps/
 /deps/assimp/
 /deps/assimp/
 /deps/glfw/
 deps/SOIL/
 build/
 CMakeFiles/
-CMakeCache
+*CMakeCache*
+*.cmake
 
 #vs
 *.vcxproj*
