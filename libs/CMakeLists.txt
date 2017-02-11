@@ -1,0 +1,8 @@
+message("libs")
+set(LIB_BUILD_DIR ${BUILD_DIR}/libs)
+add_subdirectory(glfw)
+add_subdirectory(assimp)
+add_subdirectory(SOIL)
+#add_subdirectory(src)
+#add_subdirectory(src)
+# add_subdirectory(src)

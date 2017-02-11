@@ -1,0 +1,14 @@
+# Target labels
+ assimp
+# Source files and their labels
+C:/Users/thepr/Code/Graphics/t/libs/assimp/CMakeFiles/assimp
+C:/Users/thepr/Code/Graphics/t/libs/assimp/CMakeLists.txt
+C:/Users/thepr/Code/Graphics/t/CMakeFiles/b371ba9c1178d916608ae6afef3b09f1/assimp.rule
+C:/Users/thepr/Code/Graphics/t/CMakeFiles/e42ed0063d9cf554f7127870f351e0f7/assimp-complete.rule
+C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimp-install.rule
+C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimp-mkdir.rule
+C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimp-download.rule
+C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimp-update.rule
+C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimp-patch.rule
+C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimp-configure.rule
+C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimp-build.rule

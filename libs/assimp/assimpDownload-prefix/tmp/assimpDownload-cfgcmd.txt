@@ -1,0 +1,1 @@
+cmd='C:/Program Files/CMake/bin/cmake.exe;-GVisual Studio 14 2015;C:/Users/thepr/Code/Graphics/t/libs/assimp/assimpDownload-prefix/src/assimpDownload'

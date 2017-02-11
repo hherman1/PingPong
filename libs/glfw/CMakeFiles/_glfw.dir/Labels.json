@@ -1,0 +1,55 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "C:/Users/thepr/Code/Graphics/t/libs/glfw/CMakeFiles/_glfw"
+		},
+		
+		{
+			"file" : "C:/Users/thepr/Code/Graphics/t/libs/glfw/CMakeLists.txt"
+		},
+		
+		{
+			"file" : "C:/Users/thepr/Code/Graphics/t/CMakeFiles/44116177bb24f8ebf785ae565b68fd16/_glfw.rule"
+		},
+		
+		{
+			"file" : "C:/Users/thepr/Code/Graphics/t/CMakeFiles/8e9a3d31633125686b9d7dd798d4b7a2/_glfw-complete.rule"
+		},
+		
+		{
+			"file" : "C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-install.rule"
+		},
+		
+		{
+			"file" : "C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-mkdir.rule"
+		},
+		
+		{
+			"file" : "C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-download.rule"
+		},
+		
+		{
+			"file" : "C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-update.rule"
+		},
+		
+		{
+			"file" : "C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-patch.rule"
+		},
+		
+		{
+			"file" : "C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-configure.rule"
+		},
+		
+		{
+			"file" : "C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "_glfw" ],
+		"name" : "_glfw"
+	}
+}
