@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\57b58f6c6d2a7109491aa95ed5a26c08\glfwDownload-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\57b58f6c6d2a7109491aa95ed5a26c08\glfwDownload-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\57b58f6c6d2a7109491aa95ed5a26c08\glfwDownload-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\57b58f6c6d2a7109491aa95ed5a26c08\glfwDownload-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\57b58f6c6d2a7109491aa95ed5a26c08\glfwDownload-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\57b58f6c6d2a7109491aa95ed5a26c08\glfwDownload-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\57b58f6c6d2a7109491aa95ed5a26c08\glfwDownload-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\8e9a3d31633125686b9d7dd798d4b7a2\glfwDownload-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\44116177bb24f8ebf785ae565b68fd16\glfwDownload.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\glfwDownload" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8E50A6F6-A9BF-303C-A986-0A8C43F5F0F2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

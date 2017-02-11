@@ -1,0 +1,862 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{085DD8DE-F38A-3C09-90ED-9254B6D51259}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>assimpDownload</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\thepr\Code\Graphics\t\build\libs\assimp\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\thepr\Code\Graphics\t\build\libs\assimp\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\thepr\Code\Graphics\t\build\libs\assimp\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\thepr\Code\Graphics\t\build\libs\assimp\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/thepr/Code/Graphics/t/libs/assimp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/thepr/Code/Graphics/t -BC:/Users/thepr/Code/Graphics/t --check-stamp-file C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/libs/assimp/CMakeLists.txt;C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\tmp\assimpDownload-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/thepr/Code/Graphics/t/libs/assimp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/thepr/Code/Graphics/t -BC:/Users/thepr/Code/Graphics/t --check-stamp-file C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/libs/assimp/CMakeLists.txt;C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\tmp\assimpDownload-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/thepr/Code/Graphics/t/libs/assimp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/thepr/Code/Graphics/t -BC:/Users/thepr/Code/Graphics/t --check-stamp-file C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/libs/assimp/CMakeLists.txt;C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\tmp\assimpDownload-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/thepr/Code/Graphics/t/libs/assimp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/thepr/Code/Graphics/t -BC:/Users/thepr/Code/Graphics/t --check-stamp-file C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/libs/assimp/CMakeLists.txt;C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\tmp\assimpDownload-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\2ced55d1e19289107c3ccbac22c4d8a2\assimpDownload-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Creating directories for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/assimp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/assimp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/assimp/install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/assimp/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/assimp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Creating directories for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/assimp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/assimp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/assimp/install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/assimp/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/assimp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Creating directories for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/assimp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/assimp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/assimp/install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/assimp/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/assimp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Creating directories for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/assimp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/assimp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/assimp/install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/assimp/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/assimp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\2ced55d1e19289107c3ccbac22c4d8a2\assimpDownload-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing download step (git clone) for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/assimp/tmp/assimpDownload-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-download.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\assimpDownload-gitinfo.txt;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing download step (git clone) for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/assimp/tmp/assimpDownload-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-download.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\assimpDownload-gitinfo.txt;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing download step (git clone) for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/assimp/tmp/assimpDownload-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-download.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\assimpDownload-gitinfo.txt;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing download step (git clone) for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/assimp/tmp/assimpDownload-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-download.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\assimpDownload-gitinfo.txt;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\2ced55d1e19289107c3ccbac22c4d8a2\assimpDownload-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No update step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps\assimp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-update.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No update step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps\assimp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-update.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No update step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps\assimp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-update.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No update step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps\assimp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-update.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\2ced55d1e19289107c3ccbac22c4d8a2\assimpDownload-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No patch step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-patch.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No patch step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-patch.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No patch step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-patch.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No patch step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-patch.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\2ced55d1e19289107c3ccbac22c4d8a2\assimpDownload-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing configure step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\assimp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/Users/thepr/Code/Graphics/t/build/libs/assimp/install -DBUILD_SHARED_LIBS=OFF —DASSIMP_BUILD_TESTS=OFF —DASSIMP_BUILD_ASSIMP_TOOLS=OFF -DCMAKE_BUILD_TYPE=RELEASE -DASSIMP_INSTALL_PDB=OFF "-GVisual Studio 14 2015" C:/Users/thepr/Code/Graphics/t/deps/assimp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-configure.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\tmp\assimpDownload-cfgcmd.txt;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-update;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing configure step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\assimp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/Users/thepr/Code/Graphics/t/build/libs/assimp/install -DBUILD_SHARED_LIBS=OFF —DASSIMP_BUILD_TESTS=OFF —DASSIMP_BUILD_ASSIMP_TOOLS=OFF -DCMAKE_BUILD_TYPE=RELEASE -DASSIMP_INSTALL_PDB=OFF "-GVisual Studio 14 2015" C:/Users/thepr/Code/Graphics/t/deps/assimp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-configure.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\tmp\assimpDownload-cfgcmd.txt;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-update;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing configure step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\assimp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/Users/thepr/Code/Graphics/t/build/libs/assimp/install -DBUILD_SHARED_LIBS=OFF —DASSIMP_BUILD_TESTS=OFF —DASSIMP_BUILD_ASSIMP_TOOLS=OFF -DCMAKE_BUILD_TYPE=RELEASE -DASSIMP_INSTALL_PDB=OFF "-GVisual Studio 14 2015" C:/Users/thepr/Code/Graphics/t/deps/assimp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-configure.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\tmp\assimpDownload-cfgcmd.txt;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-update;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing configure step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\assimp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/Users/thepr/Code/Graphics/t/build/libs/assimp/install -DBUILD_SHARED_LIBS=OFF —DASSIMP_BUILD_TESTS=OFF —DASSIMP_BUILD_ASSIMP_TOOLS=OFF -DCMAKE_BUILD_TYPE=RELEASE -DASSIMP_INSTALL_PDB=OFF "-GVisual Studio 14 2015" C:/Users/thepr/Code/Graphics/t/deps/assimp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-configure.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\tmp\assimpDownload-cfgcmd.txt;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-update;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\2ced55d1e19289107c3ccbac22c4d8a2\assimpDownload-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing build step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\assimp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-build.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing build step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\assimp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-build.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing build step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\assimp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-build.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing build step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\assimp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-build.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\2ced55d1e19289107c3ccbac22c4d8a2\assimpDownload-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing install step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\assimp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-install.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing install step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\assimp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-install.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing install step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\assimp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config MinSizeRel --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-install.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing install step for 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\assimp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config RelWithDebInfo --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/2ced55d1e19289107c3ccbac22c4d8a2/assimpDownload-install.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\e42ed0063d9cf554f7127870f351e0f7\assimpDownload-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Completed 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/libs/assimp/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/libs/assimp/CMakeFiles/$(Configuration)/assimpDownload-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/e42ed0063d9cf554f7127870f351e0f7/assimpDownload-complete.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-install;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-mkdir;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-download;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-update;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-patch;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-configure;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-build;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\$(Configuration)\assimpDownload-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Completed 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/libs/assimp/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/libs/assimp/CMakeFiles/$(Configuration)/assimpDownload-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/e42ed0063d9cf554f7127870f351e0f7/assimpDownload-complete.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-install;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-mkdir;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-download;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-update;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-patch;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-configure;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-build;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\$(Configuration)\assimpDownload-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Completed 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/libs/assimp/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/libs/assimp/CMakeFiles/$(Configuration)/assimpDownload-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/e42ed0063d9cf554f7127870f351e0f7/assimpDownload-complete.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-install;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-mkdir;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-download;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-update;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-patch;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-configure;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-build;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\$(Configuration)\assimpDownload-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Completed 'assimpDownload'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/libs/assimp/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/libs/assimp/CMakeFiles/$(Configuration)/assimpDownload-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/assimp/stamp/$(Configuration)/assimpDownload-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/e42ed0063d9cf554f7127870f351e0f7/assimpDownload-complete.rule;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-install;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-mkdir;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-download;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-update;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-patch;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-configure;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-build;C:\Users\thepr\Code\Graphics\t\build\libs\assimp\stamp\$(Configuration)\assimpDownload-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\$(Configuration)\assimpDownload-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\b371ba9c1178d916608ae6afef3b09f1\assimpDownload.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/b371ba9c1178d916608ae6afef3b09f1/assimpDownload.rule;C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\$(Configuration)\assimpDownload-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\assimpDownload</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/b371ba9c1178d916608ae6afef3b09f1/assimpDownload.rule;C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\$(Configuration)\assimpDownload-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\assimpDownload</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/b371ba9c1178d916608ae6afef3b09f1/assimpDownload.rule;C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\$(Configuration)\assimpDownload-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\assimpDownload</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/b371ba9c1178d916608ae6afef3b09f1/assimpDownload.rule;C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\$(Configuration)\assimpDownload-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\assimpDownload</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\thepr\Code\Graphics\t\libs\assimp\CMakeFiles\assimpDownload" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/thepr/Code/Graphics/t/ZERO_CHECK.vcxproj">
+      <Project>8B41373B-9B41-372B-99DC-E0A5E57719E9</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

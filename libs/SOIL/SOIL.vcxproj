@@ -1,0 +1,894 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{39F33955-08AB-3840-B361-4D31D6BFC98A}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>SOIL</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/thepr/Code/Graphics/t/libs/SOIL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/thepr/Code/Graphics/t -BC:/Users/thepr/Code/Graphics/t --check-stamp-file C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/libs/SOIL/CMakeLists.txt;C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject-download.cmake.in;C:\Users\thepr\Code\Graphics\t\build\libs\soil\tmp\SOIL-cfgcmd.txt.in;C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/thepr/Code/Graphics/t/libs/SOIL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/thepr/Code/Graphics/t -BC:/Users/thepr/Code/Graphics/t --check-stamp-file C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/libs/SOIL/CMakeLists.txt;C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject-download.cmake.in;C:\Users\thepr\Code\Graphics\t\build\libs\soil\tmp\SOIL-cfgcmd.txt.in;C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/thepr/Code/Graphics/t/libs/SOIL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/thepr/Code/Graphics/t -BC:/Users/thepr/Code/Graphics/t --check-stamp-file C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/libs/SOIL/CMakeLists.txt;C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject-download.cmake.in;C:\Users\thepr\Code\Graphics\t\build\libs\soil\tmp\SOIL-cfgcmd.txt.in;C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/thepr/Code/Graphics/t/libs/SOIL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/thepr/Code/Graphics/t -BC:/Users/thepr/Code/Graphics/t --check-stamp-file C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/libs/SOIL/CMakeLists.txt;C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject-download.cmake.in;C:\Users\thepr\Code\Graphics\t\build\libs\soil\tmp\SOIL-cfgcmd.txt.in;C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\f09d02693074817ee9463c0ca79a7d7b\SOIL-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Creating directories for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/SOIL
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/soil
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/soil/install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/soil/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/SOIL
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Creating directories for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/SOIL
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/soil
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/soil/install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/soil/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/SOIL
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Creating directories for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/SOIL
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/soil
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/soil/install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/soil/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/SOIL
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Creating directories for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/SOIL
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/soil
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/soil/install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/soil/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/SOIL
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\f09d02693074817ee9463c0ca79a7d7b\SOIL-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing download step (download, verify and extract) for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/download-SOIL.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/verify-SOIL.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/extract-SOIL.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-download.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\SOIL-urlinfo.txt;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing download step (download, verify and extract) for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/download-SOIL.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/verify-SOIL.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/extract-SOIL.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-download.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\SOIL-urlinfo.txt;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing download step (download, verify and extract) for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/download-SOIL.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/verify-SOIL.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/extract-SOIL.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-download.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\SOIL-urlinfo.txt;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing download step (download, verify and extract) for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/download-SOIL.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/verify-SOIL.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/extract-SOIL.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-download.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\SOIL-urlinfo.txt;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\f09d02693074817ee9463c0ca79a7d7b\SOIL-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No update step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps\SOIL
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-update.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No update step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps\SOIL
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-update.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No update step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps\SOIL
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-update.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No update step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps\SOIL
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-update.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\f09d02693074817ee9463c0ca79a7d7b\SOIL-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing patch step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps\SOIL
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/thepr/Code/Graphics/t/libs/SOIL/src/CMakeLists.txt C:/Users/thepr/Code/Graphics/t/deps/SOIL/CMakeLists.txt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-patch.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing patch step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps\SOIL
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/thepr/Code/Graphics/t/libs/SOIL/src/CMakeLists.txt C:/Users/thepr/Code/Graphics/t/deps/SOIL/CMakeLists.txt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-patch.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing patch step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps\SOIL
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/thepr/Code/Graphics/t/libs/SOIL/src/CMakeLists.txt C:/Users/thepr/Code/Graphics/t/deps/SOIL/CMakeLists.txt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-patch.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing patch step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps\SOIL
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/thepr/Code/Graphics/t/libs/SOIL/src/CMakeLists.txt C:/Users/thepr/Code/Graphics/t/deps/SOIL/CMakeLists.txt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-patch.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\f09d02693074817ee9463c0ca79a7d7b\SOIL-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing configure step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\soil
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/Users/thepr/Code/Graphics/t/build/libs/soil/install "-GVisual Studio 14 2015" C:/Users/thepr/Code/Graphics/t/deps/SOIL
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-configure.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\tmp\SOIL-cfgcmd.txt;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-update;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing configure step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\soil
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/Users/thepr/Code/Graphics/t/build/libs/soil/install "-GVisual Studio 14 2015" C:/Users/thepr/Code/Graphics/t/deps/SOIL
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-configure.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\tmp\SOIL-cfgcmd.txt;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-update;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing configure step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\soil
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/Users/thepr/Code/Graphics/t/build/libs/soil/install "-GVisual Studio 14 2015" C:/Users/thepr/Code/Graphics/t/deps/SOIL
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-configure.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\tmp\SOIL-cfgcmd.txt;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-update;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing configure step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\soil
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/Users/thepr/Code/Graphics/t/build/libs/soil/install "-GVisual Studio 14 2015" C:/Users/thepr/Code/Graphics/t/deps/SOIL
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-configure.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\tmp\SOIL-cfgcmd.txt;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-update;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\f09d02693074817ee9463c0ca79a7d7b\SOIL-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing build step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\soil
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-build.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing build step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\soil
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-build.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing build step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\soil
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-build.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing build step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\soil
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-build.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\f09d02693074817ee9463c0ca79a7d7b\SOIL-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing install step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\soil
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-install.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing install step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\soil
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-install.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing install step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\soil
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config MinSizeRel --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-install.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing install step for 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\soil
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config RelWithDebInfo --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/f09d02693074817ee9463c0ca79a7d7b/SOIL-install.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\4ba8889b226f69164a78c93d2f458f77\SOIL-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Completed 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/libs/SOIL/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/libs/SOIL/CMakeFiles/$(Configuration)/SOIL-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/4ba8889b226f69164a78c93d2f458f77/SOIL-complete.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-install;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-mkdir;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-download;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-update;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-patch;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-configure;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-build;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\$(Configuration)\SOIL-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Completed 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/libs/SOIL/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/libs/SOIL/CMakeFiles/$(Configuration)/SOIL-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/4ba8889b226f69164a78c93d2f458f77/SOIL-complete.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-install;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-mkdir;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-download;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-update;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-patch;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-configure;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-build;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\$(Configuration)\SOIL-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Completed 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/libs/SOIL/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/libs/SOIL/CMakeFiles/$(Configuration)/SOIL-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/4ba8889b226f69164a78c93d2f458f77/SOIL-complete.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-install;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-mkdir;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-download;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-update;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-patch;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-configure;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-build;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\$(Configuration)\SOIL-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Completed 'SOIL'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/libs/SOIL/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/libs/SOIL/CMakeFiles/$(Configuration)/SOIL-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/soil/stamp/$(Configuration)/SOIL-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/4ba8889b226f69164a78c93d2f458f77/SOIL-complete.rule;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-install;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-mkdir;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-download;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-update;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-patch;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-configure;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-build;C:\Users\thepr\Code\Graphics\t\build\libs\soil\stamp\$(Configuration)\SOIL-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\$(Configuration)\SOIL-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\8be6dc9f1801a8388ccd27cfa8a2fcb5\SOIL.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/8be6dc9f1801a8388ccd27cfa8a2fcb5/SOIL.rule;C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\$(Configuration)\SOIL-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\SOIL</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/8be6dc9f1801a8388ccd27cfa8a2fcb5/SOIL.rule;C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\$(Configuration)\SOIL-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\SOIL</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/8be6dc9f1801a8388ccd27cfa8a2fcb5/SOIL.rule;C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\$(Configuration)\SOIL-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\SOIL</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/8be6dc9f1801a8388ccd27cfa8a2fcb5/SOIL.rule;C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\$(Configuration)\SOIL-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\SOIL</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\SOIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/thepr/Code/Graphics/t/ZERO_CHECK.vcxproj">
+      <Project>8B41373B-9B41-372B-99DC-E0A5E57719E9</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

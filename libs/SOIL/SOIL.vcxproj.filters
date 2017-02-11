@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\f09d02693074817ee9463c0ca79a7d7b\SOIL-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\f09d02693074817ee9463c0ca79a7d7b\SOIL-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\f09d02693074817ee9463c0ca79a7d7b\SOIL-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\f09d02693074817ee9463c0ca79a7d7b\SOIL-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\f09d02693074817ee9463c0ca79a7d7b\SOIL-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\f09d02693074817ee9463c0ca79a7d7b\SOIL-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\f09d02693074817ee9463c0ca79a7d7b\SOIL-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\4ba8889b226f69164a78c93d2f458f77\SOIL-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\8be6dc9f1801a8388ccd27cfa8a2fcb5\SOIL.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\thepr\Code\Graphics\t\libs\SOIL\CMakeFiles\SOIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8E50A6F6-A9BF-303C-A986-0A8C43F5F0F2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

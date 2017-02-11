@@ -267,3 +267,4 @@ deps/*
 /deps/glfw/
 deps/SOIL/
 build/
+CMakeFiles/

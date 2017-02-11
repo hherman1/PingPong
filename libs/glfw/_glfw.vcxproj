@@ -1,0 +1,862 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A53160D3-C67D-3CA4-B1C7-A1D964C0106B}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>_glfw</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\thepr\Code\Graphics\t\build\libs\glfw\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\thepr\Code\Graphics\t\build\libs\glfw\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\thepr\Code\Graphics\t\build\libs\glfw\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\thepr\Code\Graphics\t\build\libs\glfw\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/thepr/Code/Graphics/t/libs/glfw/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/thepr/Code/Graphics/t -BC:/Users/thepr/Code/Graphics/t --check-stamp-file C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/libs/glfw/CMakeLists.txt;C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\tmp\_glfw-cfgcmd.txt.in;C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/thepr/Code/Graphics/t/libs/glfw/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/thepr/Code/Graphics/t -BC:/Users/thepr/Code/Graphics/t --check-stamp-file C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/libs/glfw/CMakeLists.txt;C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\tmp\_glfw-cfgcmd.txt.in;C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/thepr/Code/Graphics/t/libs/glfw/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/thepr/Code/Graphics/t -BC:/Users/thepr/Code/Graphics/t --check-stamp-file C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/libs/glfw/CMakeLists.txt;C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\tmp\_glfw-cfgcmd.txt.in;C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/thepr/Code/Graphics/t/libs/glfw/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/thepr/Code/Graphics/t -BC:/Users/thepr/Code/Graphics/t --check-stamp-file C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/libs/glfw/CMakeLists.txt;C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\tmp\_glfw-cfgcmd.txt.in;C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\57b58f6c6d2a7109491aa95ed5a26c08\_glfw-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Creating directories for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/glfw
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/glfw
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/glfw/install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/glfw/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/glfw
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Creating directories for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/glfw
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/glfw
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/glfw/install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/glfw/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/glfw
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Creating directories for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/glfw
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/glfw
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/glfw/install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/glfw/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/glfw
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Creating directories for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/glfw
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/glfw
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/glfw/install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/glfw/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/deps/glfw
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\57b58f6c6d2a7109491aa95ed5a26c08\_glfw-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing download step (git clone) for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/glfw/tmp/_glfw-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-download.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\_glfw-gitinfo.txt;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing download step (git clone) for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/glfw/tmp/_glfw-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-download.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\_glfw-gitinfo.txt;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing download step (git clone) for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/glfw/tmp/_glfw-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-download.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\_glfw-gitinfo.txt;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing download step (git clone) for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/thepr/Code/Graphics/t/build/libs/glfw/tmp/_glfw-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-download.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\_glfw-gitinfo.txt;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\57b58f6c6d2a7109491aa95ed5a26c08\_glfw-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No update step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps\glfw
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-update.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No update step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps\glfw
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-update.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No update step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps\glfw
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-update.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No update step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\deps\glfw
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-update.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\57b58f6c6d2a7109491aa95ed5a26c08\_glfw-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No patch step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-patch.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No patch step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-patch.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No patch step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-patch.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No patch step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-patch.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\57b58f6c6d2a7109491aa95ed5a26c08\_glfw-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing configure step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\glfw
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/Users/thepr/Code/Graphics/t/build/libs/glfw/install -DGLFW_BUILD_DOCS=OFF —DGLFW_BUILD_TESTS=OFF -DCMAKE_BUILD_TYPE= -DUSE_MSVC_RUNTIME_LIBRARY_DLL=OFF -DGLFW_USE_HYBRID_HPG=ON "-GVisual Studio 14 2015" C:/Users/thepr/Code/Graphics/t/deps/glfw
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-configure.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\tmp\_glfw-cfgcmd.txt;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-update;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing configure step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\glfw
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/Users/thepr/Code/Graphics/t/build/libs/glfw/install -DGLFW_BUILD_DOCS=OFF —DGLFW_BUILD_TESTS=OFF -DCMAKE_BUILD_TYPE= -DUSE_MSVC_RUNTIME_LIBRARY_DLL=OFF -DGLFW_USE_HYBRID_HPG=ON "-GVisual Studio 14 2015" C:/Users/thepr/Code/Graphics/t/deps/glfw
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-configure.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\tmp\_glfw-cfgcmd.txt;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-update;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing configure step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\glfw
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/Users/thepr/Code/Graphics/t/build/libs/glfw/install -DGLFW_BUILD_DOCS=OFF —DGLFW_BUILD_TESTS=OFF -DCMAKE_BUILD_TYPE= -DUSE_MSVC_RUNTIME_LIBRARY_DLL=OFF -DGLFW_USE_HYBRID_HPG=ON "-GVisual Studio 14 2015" C:/Users/thepr/Code/Graphics/t/deps/glfw
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-configure.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\tmp\_glfw-cfgcmd.txt;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-update;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing configure step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\glfw
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/Users/thepr/Code/Graphics/t/build/libs/glfw/install -DGLFW_BUILD_DOCS=OFF —DGLFW_BUILD_TESTS=OFF -DCMAKE_BUILD_TYPE= -DUSE_MSVC_RUNTIME_LIBRARY_DLL=OFF -DGLFW_USE_HYBRID_HPG=ON "-GVisual Studio 14 2015" C:/Users/thepr/Code/Graphics/t/deps/glfw
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-configure.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\tmp\_glfw-cfgcmd.txt;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-update;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\57b58f6c6d2a7109491aa95ed5a26c08\_glfw-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing build step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\glfw
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-build.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing build step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\glfw
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-build.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing build step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\glfw
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-build.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing build step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\glfw
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-build.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\57b58f6c6d2a7109491aa95ed5a26c08\_glfw-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing install step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\glfw
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-install.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing install step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\glfw
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-install.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing install step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\glfw
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config MinSizeRel --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-install.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing install step for '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\thepr\Code\Graphics\t\build\libs\glfw
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config RelWithDebInfo --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/57b58f6c6d2a7109491aa95ed5a26c08/_glfw-install.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\8e9a3d31633125686b9d7dd798d4b7a2\_glfw-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Completed '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/libs/glfw/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/libs/glfw/CMakeFiles/$(Configuration)/_glfw-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/8e9a3d31633125686b9d7dd798d4b7a2/_glfw-complete.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-install;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-mkdir;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-download;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-update;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-patch;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-configure;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-build;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\$(Configuration)\_glfw-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Completed '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/libs/glfw/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/libs/glfw/CMakeFiles/$(Configuration)/_glfw-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/8e9a3d31633125686b9d7dd798d4b7a2/_glfw-complete.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-install;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-mkdir;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-download;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-update;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-patch;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-configure;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-build;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\$(Configuration)\_glfw-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Completed '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/libs/glfw/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/libs/glfw/CMakeFiles/$(Configuration)/_glfw-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/8e9a3d31633125686b9d7dd798d4b7a2/_glfw-complete.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-install;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-mkdir;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-download;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-update;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-patch;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-configure;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-build;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\$(Configuration)\_glfw-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Completed '_glfw'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/thepr/Code/Graphics/t/libs/glfw/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/libs/glfw/CMakeFiles/$(Configuration)/_glfw-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/thepr/Code/Graphics/t/build/libs/glfw/stamp/$(Configuration)/_glfw-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/8e9a3d31633125686b9d7dd798d4b7a2/_glfw-complete.rule;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-install;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-mkdir;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-download;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-update;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-patch;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-configure;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-build;C:\Users\thepr\Code\Graphics\t\build\libs\glfw\stamp\$(Configuration)\_glfw-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\$(Configuration)\_glfw-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thepr\Code\Graphics\t\CMakeFiles\44116177bb24f8ebf785ae565b68fd16\_glfw.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/44116177bb24f8ebf785ae565b68fd16/_glfw.rule;C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\$(Configuration)\_glfw-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\_glfw</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/44116177bb24f8ebf785ae565b68fd16/_glfw.rule;C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\$(Configuration)\_glfw-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\_glfw</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/44116177bb24f8ebf785ae565b68fd16/_glfw.rule;C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\$(Configuration)\_glfw-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\_glfw</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/thepr/Code/Graphics/t/CMakeFiles/44116177bb24f8ebf785ae565b68fd16/_glfw.rule;C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\$(Configuration)\_glfw-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\_glfw</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\thepr\Code\Graphics\t\libs\glfw\CMakeFiles\_glfw" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/thepr/Code/Graphics/t/ZERO_CHECK.vcxproj">
+      <Project>8B41373B-9B41-372B-99DC-E0A5E57719E9</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
