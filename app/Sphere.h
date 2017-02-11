@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include "Model.h"
+#include "ModelRegistry.h"
 #include "GLSLProgram.h"
 #define GLM_FORCE_RADIANS
 #include <glm/glm/glm.hpp>
@@ -31,7 +32,7 @@ namespace basicgraphics {
 		virtual void draw(GLSLProgram &shader, const glm::mat4 &modelMatrix);
 
 	protected:
-		std::unique_ptr<Model> _model;
+		std::shared_ptr<Model> _model;
 		const glm::vec3 _position;
 		const float _radius;
 		const glm::vec4 _color;

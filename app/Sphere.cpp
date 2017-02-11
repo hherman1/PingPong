@@ -12,7 +12,8 @@ namespace basicgraphics {
 
 	Sphere::Sphere(const glm::vec3 &position, const float radius, const glm::vec4 &color) : _position(position), _radius(radius), _color(color)
 	{
-		_model.reset(new Model("sphere.obj", radius, _color));
+		_model = model_registry::fetchFile("sphere.obj");
+		_model->setMaterialColor(color);
 		//_model.reset(new Model("s 2.0 2.0 0.0 5.0"));
 
 	}
