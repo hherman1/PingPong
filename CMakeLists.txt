@@ -13,3 +13,5 @@ add_subdirectory(libs)
 
 file(MAKE_DIRECTORY app)
 add_subdirectory(app)
+
+set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT app)
