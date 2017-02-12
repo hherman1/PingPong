@@ -86,6 +86,7 @@ namespace basicgraphics {
 			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 			onRenderGraphics();
+			onUpdate(clock.tick());
 
 			glfwSwapBuffers(_window);
 			glfwPollEvents();
@@ -112,6 +113,10 @@ namespace basicgraphics {
 		//_shader.setUniform("model_mat", model);
 		//_shader.setUniform("eye_world", eye_world);
 
+	}
+
+	void BaseApp::onUpdate(std::chrono::milliseconds duration)
+	{
 	}
 
 	void BaseApp::onEvent(std::shared_ptr<Event> event)

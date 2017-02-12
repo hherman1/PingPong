@@ -25,7 +25,8 @@ set (SOURCEFILES  src/BaseApp.cpp
 				  src/ModelRegistry.cpp
 				  src/Sphere.cpp
 				  src/Texture.cpp
-				  src/Table.cpp)
+				  src/Table.cpp
+				  src/Clock.cpp)
 
 set (HEADERFILES  src/BaseApp.h
 				  src/Box.h
@@ -40,7 +41,8 @@ set (HEADERFILES  src/BaseApp.h
 				  src/ModelRegistry.h
 				  src/Sphere.h
 				  src/Texture.h
-				  src/Table.h)
+				  src/Table.h
+				  src/Clock.h)
 
 
 

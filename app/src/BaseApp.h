@@ -15,12 +15,14 @@
 #include <string>
 #include <sstream>
 #include <cctype>
+#include <chrono>
 
 #define GLM_FORCE_RADIANS
 #include <glm/glm/glm.hpp>
 //#include <glm/glm/gtc/matrix_access.hpp>
 //#include <glm/glm/gtc/matrix_transform.hpp>
 
+#include "Clock.h"
 #include "GLSLProgram.h"
 #include "Model.h"
 #include "Sphere.h"
@@ -84,11 +86,18 @@ namespace basicgraphics {
 		int _windowXPos;
 		int _windowYPos;
 
+		Clock clock; 
+
 
 		/*!
 		 * Called from the run loop. You should put any of your drawing code in this member function.
 		 */
 		virtual void onRenderGraphics();
+		
+		/*!
+		* Update after every draw.
+		*/
+		virtual void onUpdate(std::chrono::milliseconds duration);
 
 		/*!
 		* Events are defined by a name stored as a std::string and some associated data.
