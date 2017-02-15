@@ -54,6 +54,16 @@ source_group("Header Files" FILES ${HEADERFILES})
 
 set (CMAKE_VERBOSE_MAKEFILE TRUE)
 
+find_package(ZLIB QUIET)
+if (NOT ZLIB_FOUND)
+        if (MSVC)
+                message("Zlib not found. Setting it to zlib built with assimp")
+                set(ZLIB_LIBRARY debug ${assimp_INSTALL_DIR}/lib/zlibstaticd.lib)
+                set(ZLIB_LIBRARIES ${ZLIB_LIBRARY})
+                SET(ZLIB_FOUND 1)
+        endif()
+endif()
+
 ############################################################
 #OS Specific flags should go here
 ############################################################
